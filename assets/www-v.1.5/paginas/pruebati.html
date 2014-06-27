@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tiempo prueba</title>
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		function detener()
+	{
+		clearInterval(cronometro);
+	}
+	function iniciar(){
+		contador_m = 0;
+		contador_s = 0;
+
+			cronometro = setInterval(
+				function(){
+						if(contador_s == 60){
+						contador_s = 0;
+						contador_m++;
+						$("#contador_m").html("Minutos: " + contador_m);
+						}
+						if(contador_m == 60){
+							contador_m=0;
+						}
+						$("#contador_s").html("Segundos: " + contador_s);
+						contador_s++;
+
+					
+
+			}, 1000)
+
+
+	}
+
+	</script>
+</head>
+<body>
+	<button onclick="iniciar()">iniciar</button>
+	<button onclick="detener()">detener</button>
+	<div Id="contador_m"></div>
+	<div Id="contador_s"></div>
+	
+</body>
+</html>

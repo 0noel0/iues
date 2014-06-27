@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Progress Bar for jQuery Mobile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="jquery-1.11.0.min.js"></script>
+        <script src="jquery.mobile-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+
+        <script type="text/javascript" src="jQMProgressBar.js"></script>
+        <link rel="stylesheet" type="text/css" href="jQMProgressBar.css" />
+        
+                
+        <script>
+           
+            $(document).on('pageinit', '#home-page', function () {
+
+                jQMProgressBar('progressbar')
+                    .setOuterTheme('a')
+                    .setInnerTheme('c')
+                    .isMini(true)
+                    .setMax(100)
+                    .setStartFrom(0)
+                    .setInterval(1000)
+                    .showCounter(true)
+                    .build()
+                    .run();
+            });
+
+        </script>
+    </head>
+    
+    <body>
+        <!-- /page -->
+        <div data-role="page" id="home-page">
+            <!-- /header -->
+            <div data-role="header">
+                <h1>Progress Bar for jQuery Mobile</h1>
+
+            </div>
+            <!-- /content -->
+            <div data-role="content">
+                <div id="progressbar"></div>
+            </div>
+        </div>
+    </body>
+
+</html>

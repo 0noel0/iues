@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="eS">
+<head>
+	<meta charset="UTF-8">
+	<title>Ingreso UES</title>
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- archivo jquery para que funcione jquery mobile -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/question.js"></script>
+	 
+    
+    <!-- archivo de jquery mobile -->
+    <script type="text/javascript" src="jq/jquery.mobile-1.4.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="jq/jquery.mobile-1.4.2.min.css" />
+
+    <!-- tema de diseño para jquery mobile hecho en la web -->
+	<link rel="stylesheet" href="themes/nocturnos.min.css" />
+    
+
+   <!-- Archivos de phonegap y base de datos -->
+    <script type="text/javascript" charset="utf-8" src="phonegap/cordova-2.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap/main.js"></script>
+    <script type="text/javascript" src="phonegap/bdLocal.js"></script>
+     <script src="js/bd_ccnn.js"></script>
+    <script type="text/javascript">
+    	
+    	function  lanzarprincipal() {
+    		Mostrar(1);
+    	}
+    	window.onload = lanzarprincipal();
+
+
+    </script>
+</head>
+
+<body onload="main()">
+
+	<div data-role="page"  data-theme="a">
+			<div data-role="panel"  id="mypanel" data-position="right" data-display="overlay" data-animate="true">
+    <!-- panel content goes here -->
+    <ul data-role="listview">
+      
+		<li data-icon="home"><a href="#mypanel">Menu Principal</a></li>
+		<li data-icon="gear"><a href="configuracion.html">Configuracion</a></li>
+		<li data-icon="eye"><a href="#">Ultimo Resultado</a></li>
+		<li data-icon="tag"><a data-transition="flip" href="#positionB" class="ui-btn ui-icon-tag ui-btn-icon-right ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="window">Bibliografia</a></li>
+		<li data-icon="info" ><a data-transition="flip" href="#positionWindow" class="ui-btn ui-icon-info ui-btn-icon-right ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="window"  >Acerca de la Aplicacion</a></li>
+		<li data-icon="refresh"><a href="#" onclick="window.location.reload();">Reiniciar Test</a></li>
+
+
+		
+		<div data-role="popup" id="positionWindow" class="ui-content" data-theme="a">
+		<h3 align="center">CopyRigh@</h3>
+		<p>Version: 1.0</p>
+		<p>Desarrollador: Nelson Omar</p>
+		<p>Desarrollador: Noel Antonio</p>
+		<p>Contacto: omarzinga@gmail.com</p>
+		<p>Contacto: godfire019@gmail.com</p>
+
+		</div>
+
+		<div data-role="popup" id="positionB" class="ui-content" data-theme="a">
+		<h3 align="center">Bibliografia</h3>
+		<p>Examenes del año 2006, 2007</p>
+		<p><a href="http://www.ues.edu.sv">Universidad del El Salvador</a></p>
+		<p><a href="http://www.google.com.sv">Google todo poderoso!!</a></p>
+		<p><a href="http://www.facebook.com/developer.programador">Facebook :)</a></p>
+		<p>Contacto: omarzinga@gmail.com</p>
+		<p>Contacto: godfire019@gmail.com</p>
+
+		</div>
+
+
+	</ul>
+	</div><!-- /panel -->
+ 
+ 	
+ 	<div data-role="header" data-position="fixed">
+ 		
+ 	<h4 id="user"></h4>
+		     	<!-- Iconos de la cabecera -->
+		       	<a href="#mypanel" data-icon="bars" data-iconpos="notext" class="ui-btn-right ui-btn-icon-right">Menu</a>
+		        <a href="#uss" data-rel="popup" data-role="button" data-icon="user" data-iconpos="notext" class="ui-btn-left ui-btn-icon-left" data-transition="slide"></a>
+
+ 	</div>
+
+ 	
+ 	<div data-role="content"> <!--Contenido de pagina-->
+ 		 <a href="#" data-icon="arrow-r" data-role="button" onclick="prueba_rapida();">Evalución Rápida</a>
+ 		 <div data-role="collapsibleset" data-filter="true" data-children="> div, > div div ul li" data-inset="true" id="collapsiblesetForFilterChildren" data-input="#searchForCollapsibleSetChildren">
+
+	 	<div data-role="collapsible" data-collapsed="true" >
+	    <h4>Materias</h4>
+	    <ul data-role="listview">
+	        <li><a href="#" onclick="ccnn(), MostrarPreguntas(2);">CCNN</a></li>
+	        <li><a href="#"  onclick="sociales(), MostrarPreguntas(3);">Sociales</a></li>
+	        <li><a href="#" onclick="lenguaje(), MostrarPreguntas(4);">Lenguaje</a></li>
+	         <li><a href="#" onclick="matematica(), MostrarPreguntas(5);">Matematicas</a></li>
+	    </ul>
+
+		</div>
+
+	 	<div data-role="collapsible" data-collapsed="true">
+	    <h4>Evalucacion por N° de Preguntas</h4>
+	    <ul data-role="listview">
+	    	<p>Cantidad de preguntas
+	    	<input type="number"/>
+	        </p>
+	       
+	    </ul>
+	     <a href="#" class="ui-btn">Iniciar</a>
+		</div>
+
+		<div data-role="collapsible" data-collapsed="true">
+	    <h4>Evaluación Tiempo</h4>
+	    <ul data-role="listview">
+	    	<p>Cantidad de preguntas
+	    		<input type="Number" min="1" max="3"/>
+	    	</p>
+	    	<p>Cantidad de Tiempo
+	    		<input type="number"/>
+	    	</p>
+	    </ul>
+	    <a href="#" class="ui-btn">Iniciar</a>
+		</div>
+
+		</div>
+ 		
+ 	</div>
+ 	
+ 	
+ 	<div data-role="footer" data-position="fixed">  <!-- Pie de pagina -->
+ 		<h1>...</h1>
+ 	</div>
+
+ </div>
+
+	
+</body>
+</html>

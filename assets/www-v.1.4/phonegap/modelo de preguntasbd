@@ -1,0 +1,48 @@
+		
+
+		ciencia
+
+
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+
+
+
+		sociales
+		tx.executeSql('INSERT INTO sociales (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+
+
+		lenguaje
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO lenguaje (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+
+		matematica
+		
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+
+

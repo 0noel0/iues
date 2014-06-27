@@ -1,0 +1,74 @@
+
+ 	/*	
+ 	
+  	var sele = $("input:checked").val();
+ 	var len = results.rows.length;
+	var al = Math.floor(Math.random()*len);
+ 	var arreglo = [results.rows.item(al).Pregunta, results.rows.item(al).R1, results.rows.item(al).R2, results.rows.item(al).R3, results.rows.item(al).R4, results.rows.item(al).correctas ];
+ 			
+
+ 	var ar = (arreglo.length)
+
+
+ 	if(sele !== undefined){
+ 			ac=ac+1;
+ 			if(ac < len && ac > 0){
+ 					
+ 				$('#prue').html('<ul><li>'+arreglo[5]+'</li></ul>');
+
+ 			$("#vi").html('<button class="ui-btn">'+ "Preg. # " +(ac+1)+' de '+len+'</button>');
+	 		$(".preguntaP").html(arreglo[0]);
+			$(".r1").html('1) ' + arreglo[1]);
+			$(".r2").html('2) ' + arreglo[2]);
+			$(".r3").html('3) ' + arreglo[3]);
+			$(".r4").html('4) ' + arreglo[4]);
+		}
+
+	
+	if(ac <= len && ac > 0){
+
+		var seleccionada = $("input:checked").val();
+ 			//var correcta = results.rows.item(ar).correctas;
+ 			//alert('correcta es: ' + correcta + ' selecionada es: ' + seleccionada);
+
+ 			if(seleccionada !==  undefined){
+ 				var arre = arreglo[5];
+ 				alert(arre);
+ 					if(seleccionada == arreglo[5]){
+ 					acp = acp + 1;
+ 					$("#correctas").html("Correctas: " + acp);
+ 					$('input').attr("checked",false).checkboxradio("refresh"); 
+ 				}else{
+ 					aci = aci + 1;
+					$("#incorrectas").html("Incorrectas: " + aci);
+					$('input').attr("checked",false).checkboxradio("refresh");
+ 				}
+
+ 			}
+		}
+
+	if(ac === len){
+		var punto = 10 / len;
+		var resultado = punto * (acp);
+
+		$("#promedio").html("Nota: " + resultado );
+		$('#sig').replaceWith('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-top" id="finalizar">Finalizar</a>');
+
+	}
+}else{
+
+			if(ac === 0){	
+			$("#vi").html('<button class="ui-btn">Preg. # 1'+' de ' + len + '</button>');
+	 		$(".preguntaP").html(results.rows.item(ar).Pregunta);
+			$(".r1").html('1) ' + results.rows.item(ar).R1);
+			$(".r2").html('2) ' + results.rows.item(ar).R2);
+			$(".r3").html('3) ' + results.rows.item(ar).R3);
+			$(".r4").html('4) ' + results.rows.item(ar).R4);
+			}else{
+				alert("Seleciona una pregunta!!!");
+			 //$("#Mensaje").html('<p>Selecciona una pregunta!!!</p>');
+			
+			}
+
+}
+*/

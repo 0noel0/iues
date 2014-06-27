@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+   	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- archivo jquery para que funcione jquery mobile -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/question.js"></script>
+    
+    <!-- archivo de jquery mobile -->
+    <script type="text/javascript" src="jq/jquery.mobile-1.4.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="jq/jquery.mobile-1.4.2.min.css" />
+
+    <!-- tema de diseño para jquery mobile hecho en la web -->
+    <link rel="stylesheet" href="themes/nocturnos.min.css" />
+    
+
+   <!-- Archivos de phonegap y base de datos -->
+    <script type="text/javascript" charset="utf-8" src="phonegap/cordova-2.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap/bdLocal.js"></script>
+	<script type="text/javascript">
+		//carga el nombre de usuario de logueo
+			function lanzar(){
+				Mostrar(1);
+				MostrarPreguntas(5);
+				iniciarTiempo(5);
+				}
+	    window.onload = lanzar();
+	  
+	</script>
+
+
+</head>
+<body onload="main()">
+ <div data-role="page"  data-theme="a">
+
+	<div data-role="panel" id="mypanel" data-position="right" data-display="overlay" data-animate="true">
+    <!-- panel content goes here -->
+    <ul data-role="listview">
+      
+		<li data-icon="home"><a href="principal.html" data-transition="slidedown">Menu Principal</a></li>
+		<li data-icon="gear"><a href="#">Configuracion</a></li>
+		<li data-icon="eye"><a href="#">Ultimo Resultado</a></li>
+		<li data-icon="tag"><a href="#">Bibliografia</a></li>
+		<li data-icon="info"><a href="#">Acerca de la Aplicacion</a></li>
+		<li data-icon="refresh"><a href="#" onclick="window.location.reload();">Reiniciar Test</a></li>
+
+	</ul>
+	</div><!-- /panel -->
+ 		
+ 		<div data-role="header" data-position="fixed" id="header">
+		     	<h4 id="user"></h4>
+		     	<div data-role="navbar">
+		     		<hr />
+					<ul data-role="listview">
+						<li><h5>Tiempo: 20 min</h5></li>
+						<li><h5 id='tiempo' align="right">0 : 0 : 0</h5></li>
+		     	  	</ul>
+		       	</div>
+
+		     	<div data-role="navbar">
+		     		<ul>
+					<li><a href="#">Matematica</a></li>
+					<li id="vi"></li>
+					</ul>
+	 				<ul>
+	 			
+	 				<li><button id="incorrectas">Incorrectas: 0</button></li>
+					<li><button id="correctas">Correctas: 0</button></li>
+					<li><button id="promedio">Nota: 0</button></li>
+					</ul>
+	 			</div>
+
+		     	<!-- Iconos de la cabecera -->
+		       	<a href="#mypanel" data-icon="bars" data-iconpos="notext" class="ui-btn-right ui-btn-icon-right">Menu</a>
+		        <a href="#uss" data-rel="popup" data-role="button" data-icon="user" data-iconpos="notext" class="ui-btn-left ui-btn-icon-left" data-transition="slide"></a>
+        </div><!-- /header -->	
+
+ 		<div data-role="content"> <!--Inicio Contenido de pagina-->
+ 			
+			
+ 			   <!-- <button id="limpiar">Limpiar</button> -->
+
+			<div class="ui-corner-all custom-corners">
+				<div id="vi"></div>						
+			  	<div class="ui-body ui-body-a" >
+				   <p class="preguntaP"></p>
+				   	
+				   	<form name="formu">
+					    <fieldset data-role="controlgroup" />
+
+							<input name="rd1" id="r1" value="1" type="radio"/>
+							<label for="r1" class="r1"></label>
+
+					        <input name="rd1" id="r2" value="2" type="radio" />
+					        <label for="r2" class="r2"></label>
+
+					        <input name="rd1" id="r3" value="3" type="radio" />
+					        <label for="r3" class="r3"></label>
+
+					  	    <input name="rd1" id="r4" value="4" type="radio" />
+					        <label for="r4" class="r4"></label>
+						
+					    </fieldset>
+					   
+					</form>	
+  					</div>											
+				</div> 
+
+		
+ 		</div> <!-- Fin del Contenido -->
+
+ 	
+ 	
+ 	<div data-role="footer" data-position="fixed">  <!-- Pie de pagina -->
+ 		<div data-role="navbar">
+	        <ul>
+	            <li><a href="#" class="ui-btn ui-state-disabled" onclick="MostrarPreguntas();" data-icon="arrow-l" data-mini="true">Atrás</a></li>
+	      
+	            <li><a href="#" class="ui-btn ui-icon-check ui-btn-icon-top" id="iniciar">Iniciar</a></li>
+	     
+	        </ul>
+    	</div><!-- /navbar -->    	
+ 	</div>
+ </div> <!-- fin de Pie de Pagina -->
+
+ 
+					    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="eS">
+<head>
+	<meta charset="UTF-8">
+	<title>Ingreso UES</title>
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1" />   
+   <!-- Archivos de phonegap y base de datos -->
+    <script type="text/javascript" charset="utf-8" src="phonegap/cordova-2.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap/main.js"></script>
+    <script type="text/javascript" src="phonegap/bdLocal.js"></script>
+
+
+  <script>
+   //llama a la funcion de logueo de una sola vez en la base de datos.
+    function lanzar(){
+     CreaDB();
+      consulto();  
+      }
+       window.onload = lanzar();
+    </script>
+</head>
+<body onload="main()">
+	
+</body>
+</html>

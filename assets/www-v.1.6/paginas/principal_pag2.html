@@ -1,0 +1,101 @@
+<html>
+    <head>
+   	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="jq/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="themes/nocturnos.min.css" />			<!--- temas para colores personalizado -->
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />		<!--- temas para colores personalizado -->
+    <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="jq/jquery.mobile-1.4.2.js"></script>
+    <script src="js/question.js"></script>
+</head>
+<body>
+ <div data-role="page"  data-theme="a">
+
+
+
+
+  <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="a" id="mypanel" data-position="right">
+        <ul data-role="listview">
+                <li><a href="principal_pag2.html" data-role="button" data-icon="home">Inicio</a></li>
+                
+        </ul>
+    </div><!-- /panel -->
+ 	
+ 
+ 		
+ 		<div data-role="header" data-position="fixed" name="header" id="header">
+		      <h4>fuckencio...</h4>
+
+
+		      	<div data-role="navbar">
+			    	 <div class="ui-bar ui-bar-a">
+			    	 	<h1>Tiempo</h1><br />
+				   	 	<h3>Materia: Ciencias Naturales</h3>
+			  		</div>
+		    	</div><!-- /navbar -->
+
+
+		        <a href="#mypanel" data-icon="bars" data-iconpos="notext" class="ui-btn-right ui-btn-icon-right">Menu</a>
+
+		        <a href="#uss" data-rel="popup" data-role="button" data-icon="user" data-iconpos="notext" class="ui-btn-left ui-btn-icon-left" data-transition="slide"></a>
+
+		        		
+
+
+		        	<div data-role="popup" id="uss" data-theme="a" class="ui-corner-all">
+					    <form>
+					        <div style="padding: 20px 20px;">
+					            <h4>Agregar una Imagen</h4>
+					           	 <input type="file" data-clear-btn="false" name="file-1" id="file-1" value="" />
+								
+ 								<a href="#" data-role="button" data-icon="check" data-iconpos="notext" class="ui-btn-right ui-btn-icon-right" data-transition="slidedown"></a>
+
+								
+													           
+					        </div>
+					    </form>
+					</div>
+
+
+
+		         
+        </div><!-- /header -->
+ 		
+
+
+ 	
+ 	<div data-role="content"> <!--Inicio Contenido de pagina-->
+ 	
+ 		<div class="ui-corner-all custom-corners">
+			  	<div class="ui-body ui-body-a">
+				   <p>De acuerdo con la Teoria Bioquimica o Evolutiva sobre el Origen y evolucion de la vida la admosfera primitiva carecia de:</p>
+				   	<form>
+					    <fieldset data-role="controlgroup" data-mini="true">
+					        <input name="radio-choice-v-6" id="radio-choice-v-6a" value="on" checked="checked" type="radio" />
+					        <label for="radio-choice-v-6a">Oxigeno</label>
+					        <input name="radio-choice-v-6" id="radio-choice-v-6b" value="off" type="radio" />
+					        <label for="radio-choice-v-6b">Agua</label>
+					        <input name="radio-choice-v-6" id="radio-choice-v-6c" value="other" type="radio" />
+					        <label for="radio-choice-v-6c">Hidrógeno</label>
+					        <input name="radio-choice-v-6" id="radio-choice-v-6d" value="other" type="radio" />
+					        <label for="radio-choice-v-6d">Hidrógeno</label>
+					    </fieldset>
+					</form>
+  				</div>
+		</div>
+ 	</div> <!-- Fin del Contenido -->
+
+ 	
+ 	
+ 	<div data-role="footer" data-position="fixed">  <!-- Pie de pagina -->
+ 		<div data-role="navbar">
+	        <ul>
+	            <li><a href="sesion_pag1.html" data-icon="power" data-mini="true" data-transition="slideup">Salir</a></li>
+	            <li><a href="principal_pag3.html" data-icon="arrow-r" data-mini="true" data-transition="slidefade">Sig.</a></li>
+	        </ul>
+    	</div><!-- /navbar -->
+ 	</div>
+ </div> <!-- fin de Pie de Pagina -->
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="es">
+    <head>  
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- archivo jquery para que funcione jquery mobile -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/question.js"></script>
+    
+    <!-- archivo de jquery mobile -->
+    <script type="text/javascript" src="jq/jquery.mobile-1.4.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="jq/jquery.mobile-1.4.2.min.css" />
+
+    <!-- tema de diseño para jquery mobile hecho en la web -->
+    <link rel="stylesheet" href="themes/nocturnos.min.css" />
+    
+
+   <!-- Archivos de phonegap y base de datos -->
+    <script type="text/javascript" charset="utf-8" src="phonegap/cordova-2.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap/main.js"></script>
+    <script type="text/javascript" src="phonegap/bdLocal.js"></script>
+    
+</head>
+
+
+
+<body onload="main()">
+
+ <div data-role="page"  data-theme="a">
+ 	
+ 	
+ 	<div data-role="header" data-position="fixed">
+ 		<h1>Configuracion</h1>
+ 	</div>
+ 	
+ 	<div data-role="content" align="center"> <!--Contenido de pagina-->
+ 		<img src="img/log.png" width="150px" hidth="150px" />
+	 		<h4>Cambio de Nombre</h4>
+            <h3 id="actual"></h3>
+	 		<input type="text"  id="tbNombre" placeholder="Nuevo Nombre" value="" maxlength="13" />
+	 		<input type="text"  id="tbApellido" placeholder="Nuevo Apellido" value="" maxlength="13" />
+            <a href="principal.html" data-icon="check" data-role="button" onclick="Agregar(2), Mostrar(1);">Guardar Cambios</a>	
+                  
+
+ 	</div>
+ 	
+ 	
+ 	<div data-role="footer" data-position="fixed">  <!-- Pie de pagina -->
+ 		<h6>Copyright</h6>
+ 	</div>
+
+ </div>
+
+</body>
+</html>
