@@ -30,20 +30,37 @@ function CreaTablas(tx) {
 
 
 	function IngresarPreguntas(tx){
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "De Acuerdo con la teoria bioquimica o evolutiva sobre el origen y evolucion de la vida la atmosfera primitiva carecia de: ", "Oxigeno", "Agua", "Hidrogeno", "Nitrogeno")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La Ciencia se caracteriza por ser: ", "Racional y objetiva", "Objetiva y fantastica", "Racional y Subjetiva", "Subjetiva y Acumulativa")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Nombre de los organelos que transforman la energia quimica en energia biologicamente util: ", "Lisosoma", "Vacuola", "Reticulo", "Mitocondria")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Grupo de organismos procariontes, capaces de sobrevivir en lugares con alta temperatura y ph extremo:", "Eubacterias", "Bacterias", "Cianobacterias", "Arqueobacterias")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Periodo en el cual ocurre la mayor actividad enzimatica:", "Profase", "Anafase", "Metafase", "Interfase")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Componentes bioticos de un ecosistema:", "Productores, consumidores y desintegradores", "Aire, agua, oxigeno", "Hidrogeno, consumidores, agua", "Desintegradores, oxigeno, agua")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Una forma de representar el flujo de energia entre los distintos organismos que constituyen un ecosistema es:", "Escalones ecologicos", "Productividad ecologica", "Productividad energetica", "Piramides ecologicas")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Tipo de division celular que se da en seres vivos con reproduccion sexual, se lleva acabo en celulas gonadales, da como resultado celulas sexuales y permite la variabilidad genetica de las especies:", "Mitosis", "Meiosis", "Endomitosis", "Pleuromitosis")');
-		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "El area o lugar donde habita un ser vivo se llama:", "Nicho", "Habitat", "Madriguera", "Comunidad")');
+		
 		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La ecuacion quimica: CH4(g)+2O2(g)  CO2(g) + 2H2O(g) . Representa una reaccion de:", "Combustion", "Desplazamiento", "Neutralizacion", "Precipitacion")');
 		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "En la molecula de anhidrido carbonico (CO2), la relacion de pesos atomicos es:", "2 veces el peso del carbono por peso de oxigeno", "1 peso de carbono por peso de oxigeno", "2 veces el peso del oxigeno por peso de carbono", "1 peso de carbono por 1/2 peso de oxigeno")');
 		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Encontrar la masa en gramos de 1.69 moles de acido fosforico (H3PO4) sabiendo que el peso atomico del hidrogeno (H) es 1, el del fosforo (P) es 31 y el del oxigeno (O) es 16.", "98 g", "48g", "50 g", "166 g")');
 		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "De las siguientes sustancias I) Plata, II) Sal de mesa, III) Aire, IV) Leche, V) Dioxido de carbono, VI) Azufre, VII) Azucar, VIII) Sangre. Cual de los siguientes conjuntos de numeros romanos describe en el orden: una mezcla, un elemento y un compuesto?", "I,III,V", "IV,I,VI", "VIII,VI,VII", "VIII,IV,I")');
 		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Marque la respuesta correcta. Se dice que ha ocurrido un cambio quimico cuando:", "Una sustancia se funde", "Una sustancia se reduce a pequnos pedazos", "Cambian las propiedades de una sustancia, por ejemplo el color", "Se calienta una sustancia mediante una fuente de calor")');
+		
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Institución que surgió producto de los Acuerdos de Paz:", "Corte Suprema de Justicia", "Procuraduría General de la República", "Escuela de Capacitación Judicial", "Consejo Central de Elecciones")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Régimen político caracterizado por la imposición, el verticalismo y la violación de los Derechos Humanos:", "Oligarquía", "Caciquismo", "Dictadura", "Democracia")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Trabajo cuyo esfuerzo es generalmente físico y muscular:", "Trabajo remunerado", "Trabajo intelectual", "Trabajo productivo", "Trabajo manual")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Conjunto de personas que establecen vínculos entre sí, con la finalidad de satisfacer tanto necesidades individuales, como las colectivas:", "Grupos", "Compañerismo", "Comunidad", "Amigos")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "En sentido estricto son las diversas agrupaciones de seres humanos que se juntan en cantidades mayores o menores, tanto para la satisfacción de las necesidades primarias y las necesidades más complejas, relacionadas con su realización:", "Organizaciones", "Sociedades", "Nación", "Estado")');
+		
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Poeta y ensayista salvadoreño. Escribió entre otros, “Jugando a la gallina ciega” y “Francisco Gavidia, la odisea de su genio”:", "Walter Raudales", "Melitón Barba", "Roberto Armijo", "David Escobar Galindo.")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Parte de la noticia en la cual se explica de manera detallada la información que tiene en relación con un suceso acaecido.", "Conclusión", "Cuerpo", "Entrada", "Titular")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Son los elementos fundamentales en el proceso de producción cinematográfica.", "Imagen, sonido y sucesión", "La voz, el silencio y los efectos de sonido.", "Claridad y precisión en la expresión", "El guión y el storyboard")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Género del periodismo donde se narra un suceso pasado con relación a hechos del presente y cuyo estilo depende de el/la autor/a, pudiendo expresarse sus opiniones.", "Editorial", "Crónica", "Entrevista", "Reportaje")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Es el tipo de discurso mediante el cual se presentan razones con el objetivo de convencer al receptor.", "Argumentación", "Exposición", "Narración", "Diálogo")');
+
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Se escriben los numeros naturales consecutivos desde 1 hasta 1002 es decir: 1, 2, 3, 4, 5,.....,999,1000,1001,1002 uno a continuación del otro, en una pizarra. Luego se borran, de menor a mayor, aquellos que son de la forma 4k + 1, donde k es un número entero positivo. ¿Cuál fue el último número borrado?", "999", "1000", "1001", "1002")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Todas las ostras son conchas y todas las conchas son azules; además algunas conchas son la morada de animalitos pequeños. Según los datos suministrados, ¿cuál de las siguientes afirmaciones es cierta?", "Todas las mmoradas de animalitos pequeños son ostras", "Todas las ostras son azules", "a) y b) no son ciertas", "a) y b) son ciertas las dos")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Es conocida la afición por las corridas de toros en España. Las corridas se celebran en las plazas de toros, las cuales tienen(generalmente) un ruedo circular de arena pisada de 40 metros de diámetro cuyo perímetro está rodeado por una defensa de madera. Un toro persigue a un torero gordito que no puede saltar la defensa a lo largo de dicha defensa, ¿qué distancia recorre en cada vuelta de la plaza?", "80pi metros", "400pi metros", "80 metros", "40pi metros")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Rosa, Reina y Mila son hojas de Dilia, de 30 años de edad. Rosa es 5 años mayor que Reina y Reina 2 años mayor que Mila. Este año casualmente la suma de las edades de las tres hijas es igual a la edad de su mamá Dilia ¿cuántos años tiene Mila?", "7 años", "3 años", "10 años", "Faltan datos para calcularlo")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "¿Cuál es el valor de la expresion √(1+(3/4)^2 )?", "3/2", "11/8", "5/4", "7/4")');
+	
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Dos fuerzas de 3 N y 7 N de dirección horizontal y sentido hacia la derecha dan una resultante:", "10 N horizontal hacia la izquierda", "4 N horizontal hacia la derecha", "10 N horizontal hacia la derecha", "Nada de lo dicho en A, B y C")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Las Bases del Plan de Nación consideraron como el centro del cumplimiento del desafío social:", "La construcción de viviendas mínimas", "La erradicación de la pobreza", "El aumento controlado del sector informal", "El tema de fortalecimiento institucional")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "¿Cuál de las siguientes palabras NO pertenece al español estándar?", "Huacal", "Tarro", "Balde", "Cubo")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "DOS VECES X AL CUADRADO MULTIPLICADO POR LA RESTA DE X Y TRES VECES Z se expresa en notación algebraica:", "(2+x^2 )(x-3z)", "(2+x)^2 * (x-3z)", "2x^2(-x)(3z)", "2x^2(x-3z)")');
+		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La probabilidad de un suceso debe cumplir:", "0<=P(s)<=1", "P(s)>=0", "P(s) diferente de 1", "P(s) no puede ser cero")');
+
 	}
 
 	function IngresarCienciaBD(tx){
@@ -138,16 +155,33 @@ function CreaTablas(tx) {
 
 	}
 	function IngresarMatematicaBD(tx){
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
-		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "", "", "", "", "")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Al resolver la ecuación Log(8) + Log(x) =3 se obtiene para x el valor de:", "75", "125", "250", "240")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Sara tiene algunas naranjas. Ella vendió 40% más naranjas de las que se comió. Si Sara vendió 70 naranajas ¿Cuántas se comió?", "25", "55", "75", "No aparece")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Que valor de x satisface la siguiente ecuación (x+1)/3+ x/5=(1-x)/4", "1", "-5/7", "-5/47", "5")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Si 1/t = 5/2 + 5/2, entonces el valor de la incógnita es", "10/29", "7/10", "29/10", "10/7")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "En una combinación:", "Se atiende el orden", "Es igual que permutar", "No atiende el orden", "Da lo mismo")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "DOS VECES X AL CUADRADO MULTIPLICADO POR LA RESTA DE X Y TRES VECES Z se expresa en notación algebraica:", "(2+x^2 )(x-3z)", "(2+x)^2 * (x-3z)", "2x^2(-x)(3z)", "2x^2(x-3z)")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Dada la sucesión infinita de números: 1, 4, 9, 16, 25, 36, 49,64,....¿Qué número sigue despues de 64? ", "65", "81", "74", "Cualquier número mayor que 64")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La nota media conseguida en una clase de 20 alumnos ha sido de 6. Diez alumnos han reprobado con nota 3 y el resto obtuvo más de 5. ¿Cúal es la nota media de los alumnos aprobados?", "9", "5", "4.9", "3")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Sea C(n,r) el número combinatori. ¿Cuánto es C(6,1) + C(6,2) + C(6,3) + C(6,4) + C(6,5)?", "64", "62", "36", "63")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La probabilidad de un suceso debe cumplir:", "0<=P(s)<=1", "P(s)>=0", "P(s) diferente de 1", "P(s) no puede ser cero")');
+	
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Si alfa es un ángulo, ¿a qué es igual el suplemento de 40 - alfa?", "130 + alfa", "140 + alfa", "150 + alfa", "120 + alfa")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "¿Cuántos grados mide el ánguño que forman las dos diagonales de las caras del cubo?", "90", "75", "45", "60")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Las notas obtenidas por un alumno en tres exámenes parciales de Estadística fueron de 8, 9 y 7. Si los porcentajes asignados a cada examen son 30%, 30% y 40% respectivamente, ¿ Cuál es el primedio de aprobación del alumno?", "8", "7", "7.9", "7.5")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Cuatro amigos trabajan en un supermercado algunas horas por día, recibiendo el siguiente salario por hora: Juan $2.20, Tomás $2.50, Javier $2.40 y Martín $2.10. Si Juan trabaja 20 horas, Javier 10, Tomás 20 y Martín 15 a la semana, ¿Cuál es el salario promedio por hora?", "$2.0", "$2.10", "$2.3", "$2.5")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "En una urna hay 3 bolas rojas y 7 verdes. Se extraen 2 bolas una tras otra sin reemplazo, ¿Cuál es la probabilidad de seleccionar una roja y seguidamente una verde?", "7/30", "1/2", "11/30", "3/13")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Un gráfico de barras es aplicable en:", "Cualquier tipo de dato", "Solo para las edades", "Datos continuos", "Datos discretos")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "La formula general cuadrática es aplicable directamente a:", "Una ecuación cúbica", "Una ecuación lineal", "Un sistema de ecuaciones", "Ninguna de las anteriores")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Del siguiente sistema de ecuaciones: {7x + 3y =17 ; 2x - 3y =1}¿Cuáles valores lo satisfacen?", "x=4/3; y=23/9", "x=9/7 ; y=8/3", "x=2; y=1", "x=4/2; y=-1")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "¿Qué función trigonométrica cumple que es positiva en el primer cuadrante y negativa en el cuartp cuadrante: ?", "Seno", "Tangente", "Coseno", "Todas las anteriores")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Escoja el valor correcto de la secante de 600°:", "-2", "2", "-1/", "Ninguno de los anteriores")');
+		
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Se escriben los numeros naturales consecutivos desde 1 hasta 1002 es decir: 1, 2, 3, 4, 5,.....,999,1000,1001,1002 uno a continuación del otro, en una pizarra. Luego se borran, de menor a mayor, aquellos que son de la forma 4k + 1, donde k es un número entero positivo. ¿Cuál fue el último número borrado?", "999", "1000", "1001", "1002")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Todas las ostras son conchas y todas las conchas son azules; además algunas conchas son la morada de animalitos pequeños. Según los datos suministrados, ¿cuál de las siguientes afirmaciones es cierta?", "Todas las mmoradas de animalitos pequeños son ostras", "Todas las ostras son azules", "a) y b) no son ciertas", "a) y b) son ciertas las dos")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Es conocida la afición por las corridas de toros en España. Las corridas se celebran en las plazas de toros, las cuales tienen(generalmente) un ruedo circular de arena pisada de 40 metros de diámetro cuyo perímetro está rodeado por una defensa de madera. Un toro persigue a un torero gordito que no puede saltar la defensa a lo largo de dicha defensa, ¿qué distancia recorre en cada vuelta de la plaza?", "80pi metros", "400pi metros", "80 metros", "40pi metros")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Rosa, Reina y Mila son hojas de Dilia, de 30 años de edad. Rosa es 5 años mayor que Reina y Reina 2 años mayor que Mila. Este año casualmente la suma de las edades de las tres hijas es igual a la edad de su mamá Dilia ¿cuántos años tiene Mila?", "7 años", "3 años", "10 años", "Faltan datos para calcularlo")');
+		tx.executeSql('INSERT INTO matematica (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "¿Cuál es el valor de la expresion √(1+(3/4)^2 )?", "3/2", "11/8", "5/4", "7/4")');
 		
 	}
 
@@ -211,7 +245,7 @@ function CreaTablas(tx) {
 	    tx.executeSql('SELECT * FROM Ciencias', [], ImprimirPreguntas);
 	}
 	function ObtenerCiencia(tx) {
-	    tx.executeSql('SELECT * FROM Ciencia', [], ImprimirPreguntas);
+	    tx.executeSql('SELECT * FROM ciencia', [], ImprimirPreguntas);
 	}
 	function ObtenerSociales(tx) {
 	    tx.executeSql('SELECT * FROM sociales', [], ImprimirPreguntas);
@@ -238,8 +272,8 @@ function CreaTablas(tx) {
  if(ini == 1){ 
 
 	 	
- 	//var len = results.rows.length;
- 	var len = 25;
+ 	var len = results.rows.length;
+ 	//var len = 25;
  	sele = $("input:checked").val();
 
 //condicion para que no vaya la pregunta jejejeje

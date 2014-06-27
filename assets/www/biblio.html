@@ -1,0 +1,64 @@
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+
+
+<meta name="viemport" content="width=device-width, initial-scale=1"/>
+
+  <!-- archivo jquery para que funcione jquery mobile -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/question.js"></script>
+    
+    <!-- archivo de jquery mobile -->
+    <script type="text/javascript" src="jq/jquery.mobile-1.4.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="jq/jquery.mobile-1.4.2.min.css" />
+
+    <!-- tema de diseño para jquery mobile hecho en la web -->
+    <link rel="stylesheet" href="themes/nocturnos.min.css" />
+    
+
+   <!-- Archivos de phonegap y base de datos -->
+    <script type="text/javascript" charset="utf-8" src="phonegap/cordova-2.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap/main.js"></script>
+    <script type="text/javascript" src="phonegap/bdLocal.js"></script>
+    
+    
+</head>
+
+<body onload="main()">
+
+ <div data-role="page"  data-theme="a">
+ 	
+ 	
+ 	<div data-role="header" data-position="fixed">
+ 		<h1> Bibliografia </h1>
+        
+    </div>
+ 	
+ 	<div data-role="content" align="center"> <!--Contenido de pagina-->
+ 	 	<ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-role="listview" data-filter="false" data-inset="true">
+				<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-top ui-btn-up-c" data-theme="c" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" data-shadow="false" data-corners="false"><div class="ui-btn-inner ui-li ui-corner-top"><div class="ui-btn-text">
+                <h1>Documentos Nuevo Ingreso</h1>
+				<a class="ui-link-inherit" href="https://academica.ues.edu.sv/uiu/">Ir</a>
+				</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+				<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-top ui-btn-up-c" data-theme="c" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" data-shadow="false" data-corners="false"><div class="ui-btn-inner ui-li ui-corner-top"><div class="ui-btn-text">
+				<a class="ui-link-inherit" href="https://aulacn.ues.edu.sv/">Aula Virtual Nuevo Ingreso</a> </a>
+				</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+				
+				<p> <a class="ui-link-inherit" href="principal.html">Pagina Principal </a> </p>
+
+				</ul>
+
+ 	</div> 
+ 	
+ 	
+ 	<div data-role="footer" data-position="fixed">  <!-- Pie de pagina -->
+ 		<h6>Copyright</h6>
+ 	</div>
+
+ </div>
+
+</body>
+</html>
+
