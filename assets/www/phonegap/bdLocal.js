@@ -22,12 +22,15 @@ function CreaTablas(tx) {
 	tx.executeSql('CREATE TABLE IF NOT EXISTS resultados (idr INTEGER PRIMARY KEY, Materia Varchar(100), Resultado VARCHAR(100));');
     tx.executeSql('CREATE TABLE IF NOT EXISTS Users (userId INTEGER PRIMARY KEY, Nombre Varchar(100), Apellido VARCHAR(100));');
     tx.executeSql('CREATE TABLE IF NOT EXISTS Ciencias (idC INTEGER PRIMARY KEY, correctas INTEGER(3), Pregunta Varchar(500), R1 VARCHAR(100), R2 VARCHAR(100), R3 VARCHAR(100), R4 VARCHAR(100));');
+    //Agrege esta tabla para cuando el usuario selecciona el numero de preguntas por eso se llama preguntas
+    // tx.executeSql('CREATE TABLE IF NOT EXISTS otras (idC INTEGER PRIMARY KEY, correctas INTEGER(3), Pregunta Varchar(500), R1 VARCHAR(100), R2 VARCHAR(100), R3 VARCHAR(100), R4 VARCHAR(100));');
     tx.executeSql('CREATE TABLE IF NOT EXISTS ciencia (idc INTEGER PRIMARY KEY, correctas INTEGER(3), Pregunta Varchar(500), R1 VARCHAR(100), R2 VARCHAR(100), R3 VARCHAR(100), R4 VARCHAR(100));');
     tx.executeSql('CREATE TABLE IF NOT EXISTS sociales (ids INTEGER PRIMARY KEY, correctas INTEGER(3), Pregunta Varchar(500), R1 VARCHAR(100), R2 VARCHAR(100), R3 VARCHAR(100), R4 VARCHAR(100));');
     tx.executeSql('CREATE TABLE IF NOT EXISTS lenguaje (idl INTEGER PRIMARY KEY, correctas INTEGER(3), Pregunta Varchar(500), R1 VARCHAR(100), R2 VARCHAR(100), R3 VARCHAR(100), R4 VARCHAR(100));');
     tx.executeSql('CREATE TABLE IF NOT EXISTS matematica (idm INTEGER PRIMARY KEY, correctas INTEGER(3), Pregunta Varchar(500), R1 VARCHAR(100), R2 VARCHAR(100), R3 VARCHAR(100), R4 VARCHAR(100));');
 }
 
+    
 
 	function IngresarPreguntas(tx){
 		
@@ -62,6 +65,41 @@ function CreaTablas(tx) {
 		tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La probabilidad de un suceso debe cumplir:", "0<=P(s)<=1", "P(s)>=0", "P(s) diferente de 1", "P(s) no puede ser cero")');
 
 	}
+	//funcion para preguntas 
+	// function IngresarOtrasBD(tx){
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La ecuacion quimica: CH4(g)+2O2(g)  CO2(g) + 2H2O(g) . Representa una reaccion de:", "Combustion", "Desplazamiento", "Neutralizacion", "Precipitacion")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "En la molecula de anhidrido carbonico (CO2), la relacion de pesos atomicos es:", "2 veces el peso del carbono por peso de oxigeno", "1 peso de carbono por peso de oxigeno", "2 veces el peso del oxigeno por peso de carbono", "1 peso de carbono por 1/2 peso de oxigeno")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Encontrar la masa en gramos de 1.69 moles de acido fosforico (H3PO4) sabiendo que el peso atomico del hidrogeno (H) es 1, el del fosforo (P) es 31 y el del oxigeno (O) es 16.", "98 g", "48g", "50 g", "166 g")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "De las siguientes sustancias I) Plata, II) Sal de mesa, III) Aire, IV) Leche, V) Dioxido de carbono, VI) Azufre, VII) Azucar, VIII) Sangre. Cual de los siguientes conjuntos de numeros romanos describe en el orden: una mezcla, un elemento y un compuesto?", "I,III,V", "IV,I,VI", "VIII,VI,VII", "VIII,IV,I")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Marque la respuesta correcta. Se dice que ha ocurrido un cambio quimico cuando:", "Una sustancia se funde", "Una sustancia se reduce a pequnos pedazos", "Cambian las propiedades de una sustancia, por ejemplo el color", "Se calienta una sustancia mediante una fuente de calor")');
+		
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Institución que surgió producto de los Acuerdos de Paz:", "Corte Suprema de Justicia", "Procuraduría General de la República", "Escuela de Capacitación Judicial", "Consejo Central de Elecciones")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Régimen político caracterizado por la imposición, el verticalismo y la violación de los Derechos Humanos:", "Oligarquía", "Caciquismo", "Dictadura", "Democracia")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Trabajo cuyo esfuerzo es generalmente físico y muscular:", "Trabajo remunerado", "Trabajo intelectual", "Trabajo productivo", "Trabajo manual")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Conjunto de personas que establecen vínculos entre sí, con la finalidad de satisfacer tanto necesidades individuales, como las colectivas:", "Grupos", "Compañerismo", "Comunidad", "Amigos")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "En sentido estricto son las diversas agrupaciones de seres humanos que se juntan en cantidades mayores o menores, tanto para la satisfacción de las necesidades primarias y las necesidades más complejas, relacionadas con su realización:", "Organizaciones", "Sociedades", "Nación", "Estado")');
+		
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Poeta y ensayista salvadoreño. Escribió entre otros, “Jugando a la gallina ciega” y “Francisco Gavidia, la odisea de su genio”:", "Walter Raudales", "Melitón Barba", "Roberto Armijo", "David Escobar Galindo.")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Parte de la noticia en la cual se explica de manera detallada la información que tiene en relación con un suceso acaecido.", "Conclusión", "Cuerpo", "Entrada", "Titular")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Son los elementos fundamentales en el proceso de producción cinematográfica.", "Imagen, sonido y sucesión", "La voz, el silencio y los efectos de sonido.", "Claridad y precisión en la expresión", "El guión y el storyboard")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Género del periodismo donde se narra un suceso pasado con relación a hechos del presente y cuyo estilo depende de el/la autor/a, pudiendo expresarse sus opiniones.", "Editorial", "Crónica", "Entrevista", "Reportaje")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Es el tipo de discurso mediante el cual se presentan razones con el objetivo de convencer al receptor.", "Argumentación", "Exposición", "Narración", "Diálogo")');
+
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Se escriben los numeros naturales consecutivos desde 1 hasta 1002 es decir: 1, 2, 3, 4, 5,.....,999,1000,1001,1002 uno a continuación del otro, en una pizarra. Luego se borran, de menor a mayor, aquellos que son de la forma 4k + 1, donde k es un número entero positivo. ¿Cuál fue el último número borrado?", "999", "1000", "1001", "1002")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Todas las ostras son conchas y todas las conchas son azules; además algunas conchas son la morada de animalitos pequeños. Según los datos suministrados, ¿cuál de las siguientes afirmaciones es cierta?", "Todas las mmoradas de animalitos pequeños son ostras", "Todas las ostras son azules", "a) y b) no son ciertas", "a) y b) son ciertas las dos")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "Es conocida la afición por las corridas de toros en España. Las corridas se celebran en las plazas de toros, las cuales tienen(generalmente) un ruedo circular de arena pisada de 40 metros de diámetro cuyo perímetro está rodeado por una defensa de madera. Un toro persigue a un torero gordito que no puede saltar la defensa a lo largo de dicha defensa, ¿qué distancia recorre en cada vuelta de la plaza?", "80pi metros", "400pi metros", "80 metros", "40pi metros")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Rosa, Reina y Mila son hojas de Dilia, de 30 años de edad. Rosa es 5 años mayor que Reina y Reina 2 años mayor que Mila. Este año casualmente la suma de las edades de las tres hijas es igual a la edad de su mamá Dilia ¿cuántos años tiene Mila?", "7 años", "3 años", "10 años", "Faltan datos para calcularlo")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "¿Cuál es el valor de la expresion √(1+(3/4)^2 )?", "3/2", "11/8", "5/4", "7/4")');
+	
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (3, "Dos fuerzas de 3 N y 7 N de dirección horizontal y sentido hacia la derecha dan una resultante:", "10 N horizontal hacia la izquierda", "4 N horizontal hacia la derecha", "10 N horizontal hacia la derecha", "Nada de lo dicho en A, B y C")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (2, "Las Bases del Plan de Nación consideraron como el centro del cumplimiento del desafío social:", "La construcción de viviendas mínimas", "La erradicación de la pobreza", "El aumento controlado del sector informal", "El tema de fortalecimiento institucional")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "¿Cuál de las siguientes palabras NO pertenece al español estándar?", "Huacal", "Tarro", "Balde", "Cubo")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (4, "DOS VECES X AL CUADRADO MULTIPLICADO POR LA RESTA DE X Y TRES VECES Z se expresa en notación algebraica:", "(2+x^2 )(x-3z)", "(2+x)^2 * (x-3z)", "2x^2(-x)(3z)", "2x^2(x-3z)")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "La probabilidad de un suceso debe cumplir:", "0<=P(s)<=1", "P(s)>=0", "P(s) diferente de 1", "P(s) no puede ser cero")');
+	// 	tx.executeSql('INSERT INTO Ciencias (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Es el paso de la energía química de los carbohidratos y otras moléculas a energía biológicamente útil de los enlaces fosfatos este proceso es llamado, "Respiración celular", "Fotosistesis", "Fotolisis", "Quimiolisis")');
+		
+
+	// }
 
 	function IngresarCienciaBD(tx){
 		tx.executeSql('INSERT INTO ciencia (correctas, Pregunta, R1, R2, R3, R4) VALUES (1, "Indica cuál es la afirmación correcta. Movimiento mecánico en el espacio es:", "un cambio de lugar", "un cambio de lugar sólo si el cuerpo que se mueve es un punto material", "cambio de punto de vista", "la aplicación de una fuerza")');
@@ -206,6 +244,9 @@ function CreaTablas(tx) {
 			case 5:
 				db.transaction(IngresarMatematicaBD, errorCB, successCB);
 			break;
+			// case 6:
+			// 	db.transaction(IngresarOtrasBD, errorCB, successCB);
+			// 	break;
 
 			default:
 			break;
@@ -234,6 +275,9 @@ function CreaTablas(tx) {
 			case 5:
 				db.transaction(ObtenerMatematica, errorCB);
 			break;
+			// case 6: 
+			// 	db.transaction(ObtenerOtras, errorCB);
+			// 	break;
 
 			default:
 			break;
@@ -255,8 +299,23 @@ function CreaTablas(tx) {
 	}
 	function ObtenerMatematica(tx) {
 	    tx.executeSql('SELECT * FROM matematica', [], ImprimirPreguntas);
-	}
 
+	}
+	// function Obtenerotras(tx){
+	// 	tx.executeSql('SELECT *FROM otras' [], ImprimirPreguntas);
+	// }
+	//funcion para imprimir otras
+	// function ImprimirOtras(tx, results){
+	// 	if(ini==-1){
+	// 		ini=1;
+	// 		alert('Buena suerte!!!');
+	// 	}
+	// 	if(ini==1){
+	// 		var len= 
+
+	// 	}
+
+	// }
 
 	//**********************************************************************************************************************Function que imprime solo preguntas, ciencia, sociales, lenguaje, matematica
 	
